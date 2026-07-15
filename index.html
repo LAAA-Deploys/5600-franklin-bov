@@ -216,7 +216,7 @@ td.num, th.num { text-align: right; }
   .tr-map-print { display: block; width: 100%; height: 240px; border-radius: 4px; overflow: hidden; }
   .tr-map-print img { width: 100%; height: 100%; object-fit: cover; }
   .price-reveal { page-break-before: always; }
-  #project, #plans, #pathways, #land-comps, #economics, #marketing { page-break-before: always; }
+  #project, #plans, #pathways, #land-comps, #rent-comps, #economics, #marketing { page-break-before: always; }
   .footer { page-break-before: always; }
   table { font-size: 10px; } th { padding: 5px 8px; font-size: 9px; } td { padding: 4px 8px; }
 }
@@ -257,6 +257,7 @@ td.num, th.num { text-align: right; }
   <a href="#plans">Plans &amp; Site</a>
   <a href="#pathways">Sell vs. Build</a>
   <a href="#land-comps">Land Comps</a>
+  <a href="#rent-comps">Rent Comps</a>
   <a href="#economics">Economics</a>
   <a href="#pricing">Pricing</a>
   <a href="#contact">Contact</a>
@@ -551,24 +552,40 @@ td.num, th.num { text-align: right; }
 <div class="page-break-marker"></div>
 <div class="section" id="land-comps">
   <div class="section-title">Land Sale Comparables</div>
-  <div class="section-subtitle">Entitled Multifamily Sites &middot; Per the C&amp;W Appraisal</div>
+  <div class="section-subtitle">LAAA / Marcus &amp; Millichap Development-Site Deal Flow</div>
   <div class="section-divider"></div>
   <div class="table-scroll"><table>
-    <thead><tr><th>#</th><th>Property</th><th class="num">Site SF</th><th class="num">Units</th><th>Zoning</th><th>Sale Date</th><th class="num">Sale Price</th><th class="num">$ / Unit</th><th class="num">Adj. $ / Unit</th></tr></thead>
+    <thead><tr><th>#</th><th>Property</th><th>Status</th><th class="num">Lot SF</th><th>Zoning</th><th class="num">Unit Program</th><th class="num">Price</th><th class="num">$ / Land SF</th></tr></thead>
     <tbody>
-      <tr class="highlight"><td>S</td><td><strong>5600 Franklin Ave (subject)</strong></td><td class="num">18,997</td><td class="num">48</td><td>R3-1, TOC 3</td><td>&mdash;</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">&mdash;</td></tr>
-      <tr><td>1</td><td>4136 Rosewood Ave, Los Angeles</td><td class="num">9,902</td><td class="num">16</td><td>R4-1</td><td>Feb-24</td><td class="num">$1,460,000</td><td class="num">$91,250</td><td class="num">$96,615</td></tr>
-      <tr><td>2</td><td>2771 Rowena Ave, Los Angeles (Silver Lake)</td><td class="num">12,876</td><td class="num">39</td><td>C4-1D</td><td>Sep-23</td><td class="num">$3,450,000</td><td class="num">$88,462</td><td class="num">$90,866</td></tr>
-      <tr><td>3</td><td>1838 S Brand Blvd, Glendale</td><td class="num">27,595</td><td class="num">80</td><td>SFMU</td><td>Aug-22</td><td class="num">$8,080,000</td><td class="num">$101,000</td><td class="num">$101,853</td></tr>
-      <tr><td>4</td><td>4100 Melrose Ave, Los Angeles</td><td class="num">15,004</td><td class="num">33</td><td>C2-1</td><td>Jul-22</td><td class="num">$3,850,000</td><td class="num">$116,667</td><td class="num">$101,864</td></tr>
-      <tr class="summary"><td colspan="6"><strong>Adjusted range (C&amp;W) &middot; concluded $95,000/unit &times; 48 units</strong></td><td class="num"><strong>&rarr; $4,600,000</strong></td><td class="num"><strong>$88,462&ndash;$116,667</strong></td><td class="num"><strong>$90,866&ndash;$101,864</strong></td></tr>
+      <tr class="highlight"><td>S</td><td><strong>5600 Franklin Ave (subject)</strong></td><td>Suggested list</td><td class="num">18,997</td><td>R3-1, TOC Tier 3</td><td class="num">48 (41 RTI + 7 ADU)</td><td class="num">$4,500,000</td><td class="num"><strong>$237</strong></td></tr>
+      <tr><td>1</td><td>4718-4726 Oakwood Ave, Los Angeles 90004</td><td><strong>Closed 2/27/2026</strong></td><td class="num">&plusmn;22,310</td><td>R3-1</td><td class="num">&mdash;</td><td class="num">$4,700,000</td><td class="num">$211</td></tr>
+      <tr><td>2</td><td>4705-4709 Elmwood Ave, Los Angeles 90004</td><td>On market (M&amp;M)</td><td class="num">14,499</td><td>C2-1</td><td class="num">103 (ED1)</td><td class="num">$3,050,000</td><td class="num">$210</td></tr>
+      <tr><td>3</td><td>4623-4631 Beverly Blvd, Los Angeles 90004</td><td>In escrow &middot; close sched. 8/2026</td><td class="num">21,052</td><td>C2-1</td><td class="num">121 (MIIP)</td><td class="num">$4,975,000 <span style="color:#888;">(list)</span></td><td class="num">$236</td></tr>
     </tbody>
   </table></div>
-  <p style="font-size:12px;color:#666;margin-top:-12px;">Comparables, adjustments, and conclusion per the Cushman &amp; Wakefield appraisal (Land Valuation section, value date 11/3/2025). Adjusted values reflect C&amp;W's market-condition, location, and zoning adjustments; C&amp;W weighted Sale 1 (most recent) most heavily.</p>
+  <p style="font-size:12px;color:#666;margin-top:-12px;">All three comparables are LAAA / Marcus &amp; Millichap-controlled development-site transactions in the Beverly/Wilton corridor of 90004 &mdash; deals we know from the inside, not screen-scraped data. Oakwood (three parcels, R3-1 &mdash; the subject's zoning) <strong>closed February 27, 2026 at $4,700,000, or $211 per land SF</strong>. Elmwood (two parcels, ED1 program for 103 units) is on the market at $210/SF; Beverly (121-unit MIIP site) is in escrow off a $4,975,000 list ($236/SF), scheduled to close August 2026. Against that $210&ndash;$236/SF band for sites still needing permits, the subject's suggested list works out to <strong>$237 per land SF with the entitlement work already done</strong> &mdash; stamped RTI plans, a bank appraisal in hand, and a Franklin Village corner location superior to the comp corridor. Lot areas per LA County assessor parcel geometry; pricing per LAAA transaction records and the listing brokers.</p>
   <div class="loc-wide-map comp-map"><img src="images/land_comp_map.png" alt="Land comparable map"></div>
-  <div class="condition-note"><div class="condition-note-label">Market Check &middot; Active RTI Inventory</div>
-    LAAA currently represents comparable RTI product across the basin - including a 39-unit RTI TOC site in Echo Park asking $3,000,000 ($76,923/unit). That site prices below the subject's band for structural reasons: an interior Echo Park street versus a signalized Franklin Village corner, no bank appraisal in hand, no approved construction financing, and a unit program without the subject's oversized 1BR/2BA floor plans and pool-deck amenity package. The spread between that listing and the C&amp;W-supported $95,000/unit on the subject is the location-and-readiness premium a buyer is being asked to pay - and the comp set above supports it.
-  </div>
+</div>
+
+<!-- RENT COMPS -->
+<div class="page-break-marker"></div>
+<div class="section section-alt" id="rent-comps">
+  <div class="section-title">Rent Comparables</div>
+  <div class="section-subtitle">Hollywood Institutional Lease-Ups &middot; Current Askings, July 2026</div>
+  <div class="section-divider"></div>
+  <div class="table-scroll"><table>
+    <thead><tr><th>Property</th><th>Address</th><th>Product</th><th class="num">Current Asking</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr class="highlight"><td><strong>5600 Franklin Ave (subject, proposed)</strong></td><td>Franklin Ave &amp; Garfield Pl</td><td>Studio &middot; 1BR/2BA &middot; 2BR ADU (832 SF avg)</td><td class="num"><strong>$3,900&ndash;$4,300</strong></td><td>C&amp;W projected market rents; 2027 delivery, pool &amp; deck</td></tr>
+      <tr><td><a href="https://www.apartments.com/arrive-hollywood-hollywood-ca/cmv3yrg/" target="_blank" rel="noopener">Arrive Hollywood</a></td><td>6201 Hollywood Blvd</td><td>Studio&ndash;2BR</td><td class="num">$2,121&ndash;$4,509</td><td>Studios $2,189&ndash;$2,409 (563&ndash;624 SF)</td></tr>
+      <tr><td><a href="https://www.apartments.com/el-centro-apartments-and-bungalows-hollywood-ca/m5m52rl/" target="_blank" rel="noopener">El Centro Apartments &amp; Bungalows</a></td><td>6200 Hollywood Blvd</td><td>Studio&ndash;2BR (577&ndash;1,309 SF)</td><td class="num">$2,149&ndash;$3,850</td><td>1BR $2,538&ndash;$2,838 &middot; 2BR $3,349&ndash;$3,850; up to 2 months free</td></tr>
+      <tr><td><a href="https://www.apartments.com/lumina-hollywood-los-angeles-ca/nrmg09n/" target="_blank" rel="noopener">Lumina Hollywood</a></td><td>1522 Gordon St</td><td>Studio&ndash;2BR (576&ndash;1,506 SF)</td><td class="num">$2,254&ndash;$3,327</td><td>Studios from $2,305 &middot; 1BR from $2,505</td></tr>
+      <tr><td><a href="https://www.apartments.com/sky-hollywood-los-angeles-ca/2v16sgc/" target="_blank" rel="noopener">Sky Hollywood</a></td><td>1550 N El Centro Ave</td><td>1BR&ndash;3BR penthouse</td><td class="num">2BR from $4,985</td><td>Premium tower; the complex traded Apr 2026 ($99M)</td></tr>
+      <tr><td><a href="https://www.apartments.com/fusion-hollywood-los-angeles-ca/edj369n/" target="_blank" rel="noopener">Fusion Hollywood</a></td><td>5750 Hollywood Blvd</td><td>Studio&ndash;2BR+ (552&ndash;2,038 SF)</td><td class="num">$2,300&ndash;$5,811</td><td>Tower traded Aug 2025 ($73.9M)</td></tr>
+      <tr><td><a href="https://www.apartments.com/modera-argyle-los-angeles-ca/gfvt2ky/" target="_blank" rel="noopener">Modera Argyle</a></td><td>6220 Selma Ave</td><td>1BR&ndash;3BR</td><td class="num">$2,659&ndash;$6,784</td><td>1BR from $2,600; up to 10 weeks free (lease-up)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="narrative" style="font-size:13px;">How to read this set: these are Hollywood's institutional elevator buildings &mdash; 200&ndash;300-unit towers leasing with heavy concessions (up to two months free at El Centro, ten weeks at Modera Argyle). Their entry studios set the market floor at $2,100&ndash;$2,400, while their larger and premium units clear <strong>$4,500&ndash;$6,800 per month</strong> &mdash; demonstrating deep renter demand at and above the subject's $3,900&ndash;$4,300 projected price points. The subject competes from a different position: boutique 48-unit scale, oversized floor plans (848 SF one-bedroom/two-bath layouts against the towers' typical 550&ndash;700 SF), and a Franklin Village address a block above the boulevard. The closest boutique benchmarks &mdash; Gillis House leasing 757 SF studios at $4,270 and The Louise 4850 achieving $3,779 one-bedrooms, both per the C&amp;W survey &mdash; are the direct proof of the subject's rent basis. Askings surveyed July 2026 via the linked listings; concessions as advertised and subject to change.</p>
 </div>
 
 <!-- COMPLETED-PROJECT ECONOMICS -->
